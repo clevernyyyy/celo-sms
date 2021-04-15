@@ -1,0 +1,214 @@
+.dropdown-select {
+  width: 340px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: solid 1px #cccccc;
+  text-align: left;
+  padding: 7.5px 15px;
+  color: #ccc;
+  letter-spacing: 0.7px;
+}
+
+.caret {
+  float: right;
+  margin-top: 9px;
+  display: block;
+}
+
+.ddl-options {
+  width: 340px;
+  padding: 0;
+  margin: 0;
+  border-radius: 4px;
+  /* border-top-left-radius: 0;
+  border-top-right-radius: 0; */
+}
+
+.Dropdown-menu {
+  max-height: max-content;
+}
+
+.Dropdown-control {
+  border-radius: 4px;
+  height: 40px;
+}
+
+.row {
+  margin: 15px 0px !important;
+}
+
+.input-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.input-group {
+  width: 120px;
+  margin-right: 20px;
+}
+
+.input-group-addon {
+  background-color: #FFF !important;
+}
+
+.input-group .input-group-addon+.form-control {
+  border-left: none;
+  height: 40px;
+}
+
+.account-id {
+  color: #ff0000;
+}
+
+.logo-heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: -18px;
+  background-color: #fbefd1;
+}
+
+.logo-span {
+  display: flex;
+  flex: 1;
+}
+
+.logo-interior {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-self: center;
+}
+
+.logo-text {
+  font-size: 50px;
+  text-transform: lowercase;
+  line-height: 80px;
+  margin-bottom: 4px;
+  letter-spacing: 5px;
+  margin-left: -11px;
+  color: #38d07f;
+  margin-top: -1px;
+}
+
+.logo-img {
+  max-width: 200px;
+  max-height: 84px;
+  margin-left: -10px;
+}
+
+.logo-phone-text {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
+
+.top-inputs {
+  width: 340px !important;
+  height: 40px !important;
+  padding: 7.5px 15px !important;
+  line-height: 40px !important;
+}
+
+.left {
+  flex: 1;
+}
+
+.right {
+  display: flex;
+}
+
+.phone-pic {
+  margin-top: 60px;
+  z-index: 3;
+}
+
+.celo-pic {
+  position: absolute;
+  margin-top: 50px;
+  opacity: 0.5;
+}
+
+.landscape {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-name,
+.address-name {
+  color: #38d07f;
+}
+
+.btn-success {
+  background-color: #38d07f !important;
+  font-weight: bolder !important;
+}
+
+.error-text {
+  color: red;
+  font-size: 12px;
+}
+
+
+/* 
+.modal-header:after {
+  content: inherit;
+  display: flex;
+  justify-content: space-between;
+} */
+
+@media (min-width: 200px) {
+  .landscape {
+    flex-direction: column;
+  }
+  .left,
+  .right {
+    align-self: center;
+  }
+  .phone-pic {
+    max-width: 100%;
+    max-height: 100%;
+    transform: scale(.67);
+  }
+  .celo-pic {
+    max-width: 100%;
+    max-height: 100%;
+    transform: scale(.67) translate(-10vw);
+    align-self: center;
+  }
+  .logo-interior {
+    display: flex !important;
+    justify-content: space-around;
+    flex-direction: column;
+    align-self: center;
+  }
+  .logo-phone-text {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 780px) {
+  .logo-interior {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-self: center;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 992px) {
+  .landscape {
+    flex-direction: row;
+  }
+  .phone-pic {
+    max-width: 450px;
+    max-height: 450px;
+    transform: scale(1);
+  }
+  .celo-pic {
+    max-width: 500px;
+    max-height: 500px;
+    transform: scale(1);
+  }
+}
